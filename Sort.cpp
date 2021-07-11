@@ -18,6 +18,7 @@ void BubbleSort(int arr[], int Size){
     for(int i=0; i<Size; i++) cout<<arr[i]<<" ";
 }
 //Selection Sort
+//In selection sort, if we keep "Swap" outside of the if-else, then "k" will be compared with "j" and "j" & "i" will be swapped. 
 void SelectionSort(int arr[], int Size){
     for(int i=0; i<Size; i++){
         int k=i;
