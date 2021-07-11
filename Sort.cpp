@@ -9,7 +9,7 @@ void Swap(int *a, int *b){
 //Bubble Sort
 void BubbleSort(int arr[], int Size){
     for(int i=0; i<Size; i++){
-        for(int j=0; j<Size-j-1; j++){
+        for(int j=0; j<Size-i-1; j++){
             if(arr[j]>arr[j+1]) Swap(&arr[j], &arr[j+1]);
             //for(int i=0; i<Size; i++) cout<<arr[i]<<" ";
             //cout<<"\n";
