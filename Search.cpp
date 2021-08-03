@@ -1,6 +1,20 @@
 #include<iostream>
 using namespace std;
 
+int LinearSearch(int arr[],int Size, int element);// Time complexity O(n)
+int BinarySearch(int arr[], int Size, int element);//Time complexity O(log n)
+
+int main(){
+    int arr[]={0,1,2,3,4};
+    int Size = sizeof(arr)/sizeof(arr[0]);//You can't use "sizeof" in function.
+
+    int ans=BinarySearch(arr, Size, 3);
+    (ans != -1)? cout<<"Element found at index "<<ans<<".\n" : cout<<"Element not Found!\n";
+
+    ans=LinearSearch(arr, Size, 4);
+    (ans != -1)? cout<<"Element found at index "<<ans<<".\n" : cout<<"Element not Found!\n";
+}
+
 int LinearSearch(int arr[],int Size, int element){
     for(int i=0; i<Size; i++)
     if(element==arr[i]) {
@@ -20,15 +34,4 @@ int BinarySearch(int arr[], int Size, int element){
         //cout<<left<<" "<<mid<<" "<<right<<"\n";
     }
     return -1;
-}
-
-int main(){
-    int arr[]={0,1,2,3,4};
-    int Size = sizeof(arr)/sizeof(arr[0]);//You can't use "sizeof" in function.
-
-    int ans=BinarySearch(arr, Size, 3);
-    (ans != -1)? cout<<"Element found at index "<<ans<<".\n" : cout<<"Element not Found!\n";
-
-    ans=LinearSearch(arr, Size, 4);
-    (ans != -1)? cout<<"Element found at index "<<ans<<".\n" : cout<<"Element not Found!\n";
 }
