@@ -1,4 +1,4 @@
-//doubly link list (due- popatbegin, popatend)
+//doubly link list
 #include<iostream>
 using namespace std;
 struct Node
@@ -19,7 +19,7 @@ public:
 	   NewNode->next = NULL;
 	   NewNode->prev = NULL;
 	   return NewNode;
-    }
+        }
 
 	void insertAtBegin(int element){
 		Node* newNode = GetNewNode(element);
