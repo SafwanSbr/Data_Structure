@@ -35,3 +35,7 @@ int BinarySearch(int arr[], int Size, int element){
     }
     return -1;
 }
+
+//Building function for Binary Search
+  binary_search ( v.begin(), v.end(), 2) ;
+//Will return index number or -1;
