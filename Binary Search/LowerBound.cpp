@@ -23,4 +23,9 @@ int lowerBou_Binary_search( int arr[], int Size, int element)
 
 int main()
 {
+    vector <int> v = {1, 2, 4, 5, 5, 5, 6};
+    
+    //buildin Fun
+    auto it = lower_bound ( v.begin(), v.end(), 3); //Itaretor
+    int pos = lower_bound ( v.begin(), v.end(), 3) - v.begin();//Position
 }
