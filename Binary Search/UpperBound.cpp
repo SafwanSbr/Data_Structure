@@ -14,7 +14,7 @@ int UpperBou_Binary_search( int arr[], int Size, int element)
         if( arr[mid] <= element )  l = mid+1;
         else {
             ans = min( ans, mid);
-            r = mid+1;
+            r = mid-1;
         }
     }
     
